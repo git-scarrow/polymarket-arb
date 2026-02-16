@@ -308,6 +308,10 @@ class PolymarketClient:
                     if not clob_ids or len(clob_ids) != 2:
                         continue
 
+                    # Skip multi-outcome neg-risk markets (e.g. Weinstein sentencing buckets)
+                    if m.get("negRisk", False):
+                        continue
+
                     end_date_str = m.get("endDate", m.get("end_date_iso", ""))
 
                     # Filter by resolution date if configured
@@ -743,6 +747,10 @@ class ArbitrageEngine:
             if market.combined_price < 0.98:
                 notify(f"⚠️ Near arb: {market.question[:50]} Σ={market.combined_price:.4f}")
             return None
+        # Reject micro-priced sides (sign of multi-outcome or illiquid junk)
+        if market.yes_price < 0.05 or market.no_price < 0.05:
+            log.debug(f"Skipped micro-price: {market.question[:40]} Y=${market.yes_price} N=${market.no_price}")
+            return None
         if market.arb_profit_per_dollar < self.config.min_profit_margin:
             return None
 
@@ -913,6 +921,8 @@ class ArbBot:
             return
 
         for m in markets:
+            if self.engine.pnl.total_spent >= self.config.max_daily_spend_usd:
+                break
             opp = self.engine.detect_arb(m)
             if opp:
                 await self.engine.execute_arb(opp, poly)
