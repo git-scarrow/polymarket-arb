@@ -797,10 +797,11 @@ class CrossPlatformMatcher:
         """
         combo1 = poly.yes_price + kalshi.no_price  # Buy poly YES + kalshi NO
         combo2 = kalshi.yes_price + poly.no_price   # Buy kalshi YES + poly NO
-        if combo1 < combo2 and combo1 < 1.0:
-            return 1.0 - combo1, "buy_poly_yes_kalshi_no"
-        elif combo2 < 1.0:
-            return 1.0 - combo2, "buy_kalshi_yes_poly_no"
+        fee_adj = 0.02  # ~2% combined platform fees
+        if combo1 < combo2 and combo1 < 1.0 - fee_adj:
+            return 1.0 - combo1 - fee_adj * combo1, "buy_poly_yes_kalshi_no"
+        elif combo2 < 1.0 - fee_adj:
+            return 1.0 - combo2 - fee_adj * combo2, "buy_kalshi_yes_poly_no"
         return None, ""
 
 
@@ -822,7 +823,7 @@ class ArbitrageEngine:
             threshold += vol_adj
 
         if market.combined_price >= threshold:
-            if market.combined_price < 0.995:
+            if market.combined_price < 0.98:
                 notify(f"⚠️ Near arb: {market.question[:50]} Σ={market.combined_price:.4f}")
             return None
         if market.arb_profit_per_dollar < self.config.min_profit_margin:
