@@ -35,3 +35,9 @@ timestamp,market_id,question,yes_price,no_price,combined_price,spread,amount_per
 2026-02-16T21:38:12.411686+00:00,794968,Levante UD vs. Villarreal CF: O/U 3.5,0.2400,0.4500,0.6900,0.3100,12.50,25.00,2.7495,11.00%,True,polymarket
 2026-02-16T21:39:17.804164+00:00,638652,Will the Starship for SpaceX Starship Flight Test 12 achieve a successful splash,0.4000,0.4800,0.8800,0.1200,12.50,25.00,1.0217,4.09%,True,polymarket
 2026-02-16T21:39:18.805721+00:00,794968,Levante UD vs. Villarreal CF: O/U 3.5,0.2400,0.4500,0.6900,0.3100,12.50,25.00,2.7278,10.91%,True,polymarket
+2026-02-16T21:41:35.981944+00:00,638652,Will the Starship for SpaceX Starship Flight Test 12 achieve a successful splash,0.3900,0.4800,0.8700,0.1300,12.50,25.00,1.0224,4.09%,True,polymarket
+2026-02-16T21:41:36.984723+00:00,794968,Levante UD vs. Villarreal CF: O/U 3.5,0.2400,0.4500,0.6900,0.3100,12.50,25.00,2.7223,10.89%,True,polymarket
+2026-02-16T21:42:36.620605+00:00,638652,Will the Starship for SpaceX Starship Flight Test 12 achieve a successful splash,0.4000,0.4900,0.8900,0.1100,12.50,25.00,0.5034,2.01%,True,polymarket
+2026-02-16T21:42:37.637571+00:00,794968,Levante UD vs. Villarreal CF: O/U 3.5,0.2400,0.4500,0.6900,0.3100,12.50,25.00,2.7476,10.99%,True,polymarket
+2026-02-16T21:44:25.849135+00:00,638652,Will the Starship for SpaceX Starship Flight Test 12 achieve a successful splash,0.4000,0.4900,0.8900,0.1100,12.50,25.00,0.5021,2.01%,True,polymarket
+2026-02-16T21:44:26.865124+00:00,794968,Levante UD vs. Villarreal CF: O/U 3.5,0.2400,0.4500,0.6900,0.3100,12.50,25.00,2.7350,10.94%,True,polymarket
