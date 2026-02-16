@@ -39,6 +39,7 @@ class Config:
     max_daily_spend_usd: float = 50.0
     max_open_positions: int = 10
     max_slippage_pct: float = 0.02  # 2% max slippage
+    reinvest_pct: float = 0.50  # Reinvest 50% of profits into new trades
 
     # --- Market Filters ---
     category_filter: list[str] = field(default_factory=list)  # Empty = scan ALL

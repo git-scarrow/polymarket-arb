@@ -832,6 +832,21 @@ class ArbitrageEngine:
             monthly_net = self.pnl.net_pnl * (30 / resolve_days) * 4
             print(f"  Est. arbs/month: ~{monthly_arbs:.0f}")
             print(f"  Est. net/month:  ~${monthly_net:.0f}")
+            # Compound projection with reinvestment
+            reinvest = self.config.reinvest_pct
+            if reinvest > 0:
+                print(f"  ── Compound Growth ({reinvest:.0%} reinvested) ──")
+                bankroll = self.config.max_daily_spend_usd
+                roi = self.pnl.net_pnl / self.pnl.total_spent if self.pnl.total_spent > 0 else 0
+                for month in (1, 3, 6):
+                    # Each cycle: profit = bankroll * roi, reinvest portion grows bankroll
+                    b = bankroll
+                    cycles = int(monthly_arbs) * month
+                    for _ in range(cycles):
+                        profit = b * roi / (monthly_arbs or 1)
+                        b += profit * reinvest
+                    net = b - bankroll
+                    print(f"  {month}mo bankroll: ${b:.0f} (+${net:.0f} net)")
         print("=" * 60 + "\n")
 
 
