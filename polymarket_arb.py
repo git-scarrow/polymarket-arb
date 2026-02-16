@@ -1136,6 +1136,11 @@ async def main():
     if "--live" in sys.argv:
         config.simulation = False
 
+    # --resolve-days=N overrides max_resolution_days
+    for arg in sys.argv:
+        if arg.startswith("--resolve-days="):
+            config.max_resolution_days = int(arg.split("=", 1)[1])
+
     bot = ArbBot(config)
 
     if "--report" in sys.argv:
