@@ -821,32 +821,26 @@ class ArbitrageEngine:
         print(f"  Daily remaining: ${self.config.max_daily_spend_usd - self.pnl.total_spent:.2f}")
         if self.trades_executed > 0 and self.config.simulation:
             avg_profit = self.pnl.net_pnl / self.trades_executed
-            weekly = avg_profit * 5 * 7  # 5 arbs/week estimate
-            monthly = weekly * 4
             resolve_days = self.config.max_resolution_days or 30
-            print(f"  ── Sim Projection (after slippage) ──")
-            print(f"  Avg profit/arb:  ${avg_profit:.2f}")
-            print(f"  At 5 arbs/week:  ~${monthly:.0f}/month net")
-            print(f"  ── Monthly Payout Estimate (≤{resolve_days}d markets) ──")
             monthly_arbs = self.trades_executed * (30 / resolve_days) * 4
             monthly_net = self.pnl.net_pnl * (30 / resolve_days) * 4
-            print(f"  Est. arbs/month: ~{monthly_arbs:.0f}")
-            print(f"  Est. net/month:  ~${monthly_net:.0f}")
-            # Compound projection with reinvestment
+            roi = self.pnl.net_pnl / self.pnl.total_spent if self.pnl.total_spent > 0 else 0
             reinvest = self.config.reinvest_pct
+            bankroll = self.config.max_daily_spend_usd
+            print(f"  ── ≤{resolve_days}d Market Projection (after slippage) ──")
+            print(f"  Avg profit/arb:  ${avg_profit:.2f}  │  ROI/arb: {roi / self.trades_executed * 100:.1f}%")
+            print(f"  Est. arbs/month: ~{monthly_arbs:.0f}")
+            print(f"  Est. net/month:  ~${monthly_net:.0f} (no reinvest)")
             if reinvest > 0:
-                print(f"  ── Compound Growth ({reinvest:.0%} reinvested) ──")
-                bankroll = self.config.max_daily_spend_usd
-                roi = self.pnl.net_pnl / self.pnl.total_spent if self.pnl.total_spent > 0 else 0
-                for month in (1, 3, 6):
-                    # Each cycle: profit = bankroll * roi, reinvest portion grows bankroll
+                print(f"  ── Bankroll Growth ({reinvest:.0%} of profits reinvested) ──")
+                print(f"  Starting:        ${bankroll:.0f}")
+                for month in (1, 3, 6, 12):
                     b = bankroll
                     cycles = int(monthly_arbs) * month
                     for _ in range(cycles):
                         profit = b * roi / (monthly_arbs or 1)
                         b += profit * reinvest
-                    net = b - bankroll
-                    print(f"  {month}mo bankroll: ${b:.0f} (+${net:.0f} net)")
+                    print(f"  {month:>2}mo bankroll:   ${b:>7.0f}  (+${b - bankroll:>6.0f} net)")
         print("=" * 60 + "\n")
 
 
