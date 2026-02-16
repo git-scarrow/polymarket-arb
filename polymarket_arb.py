@@ -40,6 +40,7 @@ from pathlib import Path
 from typing import Any
 
 import aiohttp
+import numpy as np
 
 from config import Config
 
@@ -70,6 +71,60 @@ logging.basicConfig(
 log = logging.getLogger("arb")
 
 
+# ─── GARCH(1,1) Volatility Forecaster ─────────────────────────────────────────
+
+class GARCH11:
+    """Lightweight GARCH(1,1) via MLE for volatility forecasting."""
+
+    def __init__(self, returns: np.ndarray):
+        self.returns = returns
+        self.params: np.ndarray | None = None
+
+    def _neg_log_likelihood(self, params: np.ndarray) -> float:
+        omega, alpha, beta = params
+        if omega <= 0 or alpha < 0 or beta < 0 or alpha + beta >= 1:
+            return 1e10
+        y = self.returns
+        n = len(y)
+        sigma2 = np.empty(n)
+        sigma2[0] = np.var(y) if n > 0 else 1.0
+        for t in range(1, n):
+            sigma2[t] = omega + alpha * y[t - 1] ** 2 + beta * sigma2[t - 1]
+        sigma2 = np.maximum(sigma2, 1e-10)
+        ll = -0.5 * np.sum(np.log(2 * np.pi) + np.log(sigma2) + y ** 2 / sigma2)
+        return -ll
+
+    def fit(self) -> "GARCH11":
+        from scipy.optimize import minimize
+        res = minimize(
+            self._neg_log_likelihood,
+            x0=np.array([0.05, 0.1, 0.8]),
+            method="Nelder-Mead",
+            options={"maxiter": 2000, "xatol": 1e-8},
+        )
+        self.params = np.abs(res.x)  # Force positive
+        return self
+
+    def forecast(self, horizon: int = 5) -> np.ndarray:
+        if self.params is None:
+            raise ValueError("Call fit() first")
+        omega, alpha, beta = self.params
+        y = self.returns
+        # Compute last conditional variance
+        n = len(y)
+        sigma2 = np.var(y)
+        for t in range(n):
+            sigma2 = omega + alpha * y[t] ** 2 + beta * sigma2
+        # Forecast forward
+        forecasts = np.empty(horizon)
+        last_y2 = y[-1] ** 2 if n > 0 else 0.0
+        for h in range(horizon):
+            sigma2 = omega + alpha * last_y2 + beta * sigma2
+            forecasts[h] = np.sqrt(max(sigma2, 1e-10))
+            last_y2 = 0.0  # Assume mean-zero future shocks
+        return forecasts
+
+
 # ─── Data Models ───────────────────────────────────────────────────────────────
 
 class Side(str, Enum):
@@ -92,6 +147,7 @@ class MarketSnapshot:
     category: str = ""
     end_date: str = ""
     source: str = "polymarket"
+    vol_forecast: np.ndarray = field(default_factory=lambda: np.array([]))
 
     @property
     def combined_price(self) -> float:
@@ -482,17 +538,50 @@ class PolymarketClient:
             if opp:
                 asyncio.create_task(engine.execute_arb(opp, self))
 
-    async def get_price_history(self, token_id: str, days_back: int = 30) -> list[dict]:
-        """Fetch historical prices for backtesting."""
-        end_ts = int(time.time())
-        start_ts = end_ts - (days_back * 86400)
+    async def get_price_history(self, token_id: str, interval: str = "1w", fidelity: int = 60) -> list[dict]:
+        """Fetch historical prices. interval: 1h/6h/1d/1w/1m, fidelity: minutes per point."""
         data = await self._get(
             self.clob_url, "/prices-history",
-            {"market": token_id, "startTs": str(start_ts), "endTs": str(end_ts)},
+            {"market": token_id, "interval": interval, "fidelity": str(fidelity)},
         )
         if data and "history" in data:
             return data["history"]
         return []
+
+    async def forecast_market_vol(self, market: MarketSnapshot, interval: str = "1w", horizon: int = 5) -> np.ndarray:
+        """Forecast volatility for a market using GARCH(1,1) on historical YES-token prices."""
+        history = await self.get_price_history(market.yes_token_id, interval=interval)
+        if not history or len(history) < 10:
+            return np.array([0.0] * horizon)
+
+        prices = np.array([float(h["p"]) for h in history if "p" in h])
+        if len(prices) < 5:
+            return np.array([0.0] * horizon)
+
+        # Log returns
+        prices = np.maximum(prices, 1e-8)
+        returns = np.diff(np.log(prices))
+        if len(returns) < 5:
+            return np.array([np.std(returns)] * horizon) if len(returns) > 0 else np.array([0.0] * horizon)
+
+        try:
+            model = GARCH11(returns).fit()
+            forecasts = model.forecast(horizon)
+            return forecasts
+        except Exception as e:
+            log.debug(f"GARCH failed for {market.question[:30]}: {e}")
+            return np.array([np.std(returns)] * horizon)
+
+    async def forecast_markets_vol(self, markets: list[MarketSnapshot], top_n: int = 50) -> None:
+        """Forecast vol for top_n markets (by volume) in parallel."""
+        subset = markets[:top_n]
+
+        async def _forecast(m: MarketSnapshot):
+            m.vol_forecast = await self.forecast_market_vol(m)
+
+        await asyncio.gather(*(_forecast(m) for m in subset))
+        forecasted = sum(1 for m in subset if len(m.vol_forecast) > 0 and m.vol_forecast.mean() > 0)
+        log.info(f"📈 Vol forecasted for {forecasted}/{len(subset)} markets")
 
     async def place_order(self, token_id: str, side: str, price: float, size: float) -> dict | None:
         """Place a buy order. Uses py-clob-client in live mode."""
@@ -726,8 +815,13 @@ class ArbitrageEngine:
         self.trades_executed = 0
 
     def detect_arb(self, market: MarketSnapshot) -> ArbOpportunity | None:
-        if market.combined_price >= self.config.arb_threshold:
-            # Near-miss alert for manual review
+        # Dynamic threshold: high-vol markets get a looser threshold (more catches)
+        threshold = self.config.arb_threshold
+        if len(market.vol_forecast) > 0 and market.vol_forecast.mean() > 0:
+            vol_adj = min(market.vol_forecast.mean() * 0.1, 0.005)  # Cap +0.5%
+            threshold += vol_adj
+
+        if market.combined_price >= threshold:
             if market.combined_price < 0.995:
                 notify(f"⚠️ Near arb: {market.question[:50]} Σ={market.combined_price:.4f}")
             return None
@@ -885,7 +979,18 @@ class ArbBot:
             log.info("No markets returned")
             return
 
-        for m in markets:
+        # Forecast vol for top 50 markets (by volume, already sorted)
+        await poly.forecast_markets_vol(markets, top_n=50)
+
+        # Prioritize high-vol markets for arb detection
+        high_vol = [m for m in markets if len(m.vol_forecast) > 0 and m.vol_forecast.mean() > 0.02]
+        rest = [m for m in markets if m not in high_vol]
+        if high_vol:
+            log.info(f"🔥 {len(high_vol)} high-volatility markets prioritized (>2% forecast vol)")
+            for m in high_vol[:5]:
+                log.info(f"  📊 vol={m.vol_forecast.mean():.4f} │ Σ=${m.combined_price:.4f} │ {m.question[:50]}")
+
+        for m in high_vol + rest:
             opp = self.engine.detect_arb(m)
             if opp:
                 await self.engine.execute_arb(opp, poly)
@@ -981,10 +1086,11 @@ class ArbBot:
 
     async def run_historical_backtest(self, poly: PolymarketClient, markets: list[MarketSnapshot], days: int = 30):
         """Backtest using actual price history from CLOB API."""
-        log.info(f"── Historical Backtest ({days} days) ──")
+        interval = "1m" if days > 7 else "1w" if days > 1 else "1d"
+        log.info(f"── Historical Backtest ({days} days, interval={interval}) ──")
         for m in markets[:5]:
-            yes_hist = await poly.get_price_history(m.yes_token_id, days)
-            no_hist = await poly.get_price_history(m.no_token_id, days)
+            yes_hist = await poly.get_price_history(m.yes_token_id, interval=interval)
+            no_hist = await poly.get_price_history(m.no_token_id, interval=interval)
             if not yes_hist or not no_hist:
                 continue
             opps = 0
