@@ -33,7 +33,7 @@ import signal
 import sys
 import time
 from dataclasses import dataclass, field
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from difflib import SequenceMatcher
 from enum import Enum
 from pathlib import Path
@@ -308,7 +308,18 @@ class PolymarketClient:
                     if not clob_ids or len(clob_ids) != 2:
                         continue
 
-                    # clobTokenIds[0] = YES, clobTokenIds[1] = NO
+                    end_date_str = m.get("endDate", m.get("end_date_iso", ""))
+
+                    # Filter by resolution date if configured
+                    if self.config.max_resolution_days > 0 and end_date_str:
+                        try:
+                            end_dt = datetime.fromisoformat(end_date_str.replace("Z", "+00:00"))
+                            cutoff = datetime.now(timezone.utc) + timedelta(days=self.config.max_resolution_days)
+                            if end_dt > cutoff:
+                                continue  # Skip long-dated markets
+                        except (ValueError, TypeError):
+                            pass  # Keep markets with unparseable dates
+
                     all_markets.append(MarketSnapshot(
                         market_id=str(m.get("id", "")),
                         condition_id=str(m.get("conditionId", m.get("condition_id", ""))),
@@ -320,7 +331,7 @@ class PolymarketClient:
                         volume=float(m.get("volume", 0)),
                         liquidity=float(m.get("liquidity", 0)),
                         category=str(m.get("category", "")),
-                        end_date=m.get("endDate", m.get("end_date_iso", "")),
+                        end_date=end_date_str,
                     ))
                 except (KeyError, ValueError, TypeError, json.JSONDecodeError):
                     continue
@@ -384,7 +395,8 @@ class PolymarketClient:
         markets = await self.get_all_active_markets()
         # Sort by volume descending — high-volume markets get priced first
         markets.sort(key=lambda m: m.volume, reverse=True)
-        log.info(f"   Gamma API returned {len(markets)} active binary markets (sorted by volume)")
+        res_label = f", resolving ≤{self.config.max_resolution_days}d" if self.config.max_resolution_days > 0 else ""
+        log.info(f"   Gamma API returned {len(markets)} active binary markets (sorted by volume{res_label})")
         priced = await self.price_markets(markets)
         log.info(f"   {len(priced)} markets priced from CLOB (liq >= ${self.config.min_ask_size_usd})")
         # Build token map for WebSocket
@@ -728,7 +740,7 @@ class ArbitrageEngine:
     def detect_arb(self, market: MarketSnapshot) -> ArbOpportunity | None:
         if market.combined_price >= self.config.arb_threshold:
             # Near-miss alert for manual review
-            if market.combined_price < 0.995:
+            if market.combined_price < 0.98:
                 notify(f"⚠️ Near arb: {market.question[:50]} Σ={market.combined_price:.4f}")
             return None
         if market.arb_profit_per_dollar < self.config.min_profit_margin:
@@ -811,9 +823,15 @@ class ArbitrageEngine:
             avg_profit = self.pnl.net_pnl / self.trades_executed
             weekly = avg_profit * 5 * 7  # 5 arbs/week estimate
             monthly = weekly * 4
+            resolve_days = self.config.max_resolution_days or 30
             print(f"  ── Sim Projection (after slippage) ──")
             print(f"  Avg profit/arb:  ${avg_profit:.2f}")
             print(f"  At 5 arbs/week:  ~${monthly:.0f}/month net")
+            print(f"  ── Monthly Payout Estimate (≤{resolve_days}d markets) ──")
+            monthly_arbs = self.trades_executed * (30 / resolve_days) * 4
+            monthly_net = self.pnl.net_pnl * (30 / resolve_days) * 4
+            print(f"  Est. arbs/month: ~{monthly_arbs:.0f}")
+            print(f"  Est. net/month:  ~${monthly_net:.0f}")
         print("=" * 60 + "\n")
 
 

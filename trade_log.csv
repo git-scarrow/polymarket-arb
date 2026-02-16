@@ -10,3 +10,8 @@ timestamp,market_id,question,yes_price,no_price,combined_price,spread,amount_per
 2026-02-16T03:02:31.670284+00:00,pm-005,Lakers make NBA playoffs 2026?,0.4800,0.4800,0.9600,0.0400,12.50,25.00,1.0278,4.11%,True,polymarket
 2026-02-16T03:02:32.822115+00:00,pm-005,Lakers make NBA playoffs 2026?,0.4800,0.4800,0.9600,0.0400,12.50,25.00,1.0247,4.10%,True,polymarket
 2026-02-16T03:02:39.095736+00:00,pm-005,Lakers make NBA playoffs 2026?,0.4800,0.4800,0.9600,0.0400,12.50,25.00,1.0304,4.12%,True,polymarket
+2026-02-16T18:39:10.163268+00:00,pm-005,Lakers make NBA playoffs 2026?,0.4800,0.4800,0.9600,0.0400,12.50,25.00,1.0261,4.10%,True,polymarket
+2026-02-16T18:40:57.289961+00:00,544096,Will Harvey Weinstein be sentenced to between 20 and 30 years in prison?,0.0710,0.3540,0.4250,0.5750,12.50,25.00,10.1286,40.51%,True,polymarket
+2026-02-16T18:40:58.292512+00:00,544092,Will Harvey Weinstein be sentenced to no prison time?,0.2410,0.2130,0.4540,0.5460,12.50,25.00,26.3511,105.40%,True,polymarket
+2026-02-16T18:41:43.770444+00:00,544096,Will Harvey Weinstein be sentenced to between 20 and 30 years in prison?,0.0710,0.3540,0.4250,0.5750,12.50,25.00,10.1561,40.62%,True,polymarket
+2026-02-16T18:41:44.772368+00:00,544092,Will Harvey Weinstein be sentenced to no prison time?,0.2410,0.2130,0.4540,0.5460,12.50,25.00,26.3708,105.48%,True,polymarket

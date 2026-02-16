@@ -45,6 +45,7 @@ class Config:
     min_liquidity_usd: float = 100.0  # Skip illiquid markets
     min_volume_usd: float = 50.0
     min_ask_size_usd: float = 20.0  # Both asks must have >= this size
+    max_resolution_days: int = 30  # Only markets resolving within N days (0 = no filter)
 
     # --- Logging ---
     trade_log_csv: str = "trade_log.csv"
