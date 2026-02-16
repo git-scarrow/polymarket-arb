@@ -1,0 +1,530 @@
+nohup: ignoring input
+21:58:57 │ INFO    │ arb │ ✅ Kalshi RSA auth configured
+21:58:57 │ INFO    │ arb │ ─── Scan #1 ───
+21:58:57 │ INFO    │ arb │ 📡 Scanning Polymarket...
+21:58:57 │ INFO    │ arb │    Gamma API returned 200 active binary markets (sorted by volume)
+21:59:15 │ INFO    │ arb │    194 markets priced from CLOB (liq >= $20.0)
+21:59:15 │ INFO    │ arb │ ── Top 5 closest markets ──
+21:59:15 │ INFO    │ arb │   Σ=$0.7080 │ Y=$0.1570 N=$0.5510 │ Will Harvey Weinstein be sentenced to less than 5 years
+21:59:15 │ INFO    │ arb │   Σ=$0.8990 │ Y=$0.0090 N=$0.8900 │ Will Harvey Weinstein be sentenced to more than 30 year
+21:59:15 │ INFO    │ arb │   Σ=$0.9100 │ Y=$0.1200 N=$0.7900 │ Will Harvey Weinstein be sentenced to between 10 and 20
+21:59:15 │ INFO    │ arb │   Σ=$0.9210 │ Y=$0.0110 N=$0.9100 │ Will Harvey Weinstein be sentenced to between 5 and 10 
+21:59:15 │ INFO    │ arb │   Σ=$0.9460 │ Y=$0.5930 N=$0.3530 │ Will MegaETH perform an airdrop by June 30? 
+21:59:15 │ INFO    │ arb │ 📡 Cross-checking Kalshi...
+21:59:17 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Rob Jetten become the next Prime Minister of 
+21:59:17 │ INFO    │ arb │    Poly  YES=$0.99 NO=$0.01
+21:59:17 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+21:59:17 │ INFO    │ arb │    Profit=$0.9850/share  Strategy=buy_kalshi_yes_poly_no  Match=66%
+21:59:17 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Geert Wilders become the next Prime Minister 
+21:59:17 │ INFO    │ arb │    Poly  YES=$0.00 NO=$1.00
+21:59:17 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+21:59:17 │ INFO    │ arb │    Profit=$0.9890/share  Strategy=buy_poly_yes_kalshi_no  Match=64%
+21:59:17 │ INFO    │ arb │ 🔌 WebSocket stream started in background
+21:59:17 │ INFO    │ arb │ 🔌 WebSocket connected — streaming 388 tokens
+21:59:27 │ INFO    │ arb │ ─── Scan #2 ───
+21:59:27 │ INFO    │ arb │ 📡 Scanning Polymarket...
+21:59:27 │ INFO    │ arb │    Gamma API returned 200 active binary markets (sorted by volume)
+21:59:45 │ INFO    │ arb │    194 markets priced from CLOB (liq >= $20.0)
+21:59:45 │ INFO    │ arb │ ── Top 5 closest markets ──
+21:59:45 │ INFO    │ arb │   Σ=$0.6980 │ Y=$0.1470 N=$0.5510 │ Will Harvey Weinstein be sentenced to less than 5 years
+21:59:45 │ INFO    │ arb │   Σ=$0.8990 │ Y=$0.0090 N=$0.8900 │ Will Harvey Weinstein be sentenced to more than 30 year
+21:59:45 │ INFO    │ arb │   Σ=$0.9100 │ Y=$0.1200 N=$0.7900 │ Will Harvey Weinstein be sentenced to between 10 and 20
+21:59:45 │ INFO    │ arb │   Σ=$0.9210 │ Y=$0.0110 N=$0.9100 │ Will Harvey Weinstein be sentenced to between 5 and 10 
+21:59:45 │ INFO    │ arb │   Σ=$0.9460 │ Y=$0.5930 N=$0.3530 │ Will MegaETH perform an airdrop by June 30? 
+21:59:45 │ INFO    │ arb │ 📡 Cross-checking Kalshi...
+21:59:47 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Rob Jetten become the next Prime Minister of 
+21:59:47 │ INFO    │ arb │    Poly  YES=$0.99 NO=$0.00
+21:59:47 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+21:59:47 │ INFO    │ arb │    Profit=$0.9860/share  Strategy=buy_kalshi_yes_poly_no  Match=66%
+21:59:47 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Geert Wilders become the next Prime Minister 
+21:59:47 │ INFO    │ arb │    Poly  YES=$0.00 NO=$1.00
+21:59:47 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+21:59:47 │ INFO    │ arb │    Profit=$0.9890/share  Strategy=buy_poly_yes_kalshi_no  Match=64%
+21:59:57 │ INFO    │ arb │ ─── Scan #3 ───
+21:59:57 │ INFO    │ arb │ 📡 Scanning Polymarket...
+21:59:57 │ INFO    │ arb │    Gamma API returned 200 active binary markets (sorted by volume)
+22:00:15 │ INFO    │ arb │    194 markets priced from CLOB (liq >= $20.0)
+22:00:15 │ INFO    │ arb │ ── Top 5 closest markets ──
+22:00:15 │ INFO    │ arb │   Σ=$0.6980 │ Y=$0.1470 N=$0.5510 │ Will Harvey Weinstein be sentenced to less than 5 years
+22:00:15 │ INFO    │ arb │   Σ=$0.8990 │ Y=$0.0090 N=$0.8900 │ Will Harvey Weinstein be sentenced to more than 30 year
+22:00:15 │ INFO    │ arb │   Σ=$0.9100 │ Y=$0.1200 N=$0.7900 │ Will Harvey Weinstein be sentenced to between 10 and 20
+22:00:15 │ INFO    │ arb │   Σ=$0.9210 │ Y=$0.0110 N=$0.9100 │ Will Harvey Weinstein be sentenced to between 5 and 10 
+22:00:15 │ INFO    │ arb │   Σ=$0.9460 │ Y=$0.5930 N=$0.3530 │ Will MegaETH perform an airdrop by June 30? 
+22:00:15 │ INFO    │ arb │ 📡 Cross-checking Kalshi...
+22:00:17 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Rob Jetten become the next Prime Minister of 
+22:00:17 │ INFO    │ arb │    Poly  YES=$0.99 NO=$0.00
+22:00:17 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:00:17 │ INFO    │ arb │    Profit=$0.9860/share  Strategy=buy_kalshi_yes_poly_no  Match=66%
+22:00:17 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Geert Wilders become the next Prime Minister 
+22:00:17 │ INFO    │ arb │    Poly  YES=$0.00 NO=$1.00
+22:00:17 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:00:17 │ INFO    │ arb │    Profit=$0.9890/share  Strategy=buy_poly_yes_kalshi_no  Match=64%
+22:00:27 │ INFO    │ arb │ ─── Scan #4 ───
+22:00:27 │ INFO    │ arb │ 📡 Scanning Polymarket...
+22:00:27 │ INFO    │ arb │    Gamma API returned 200 active binary markets (sorted by volume)
+22:00:46 │ INFO    │ arb │    194 markets priced from CLOB (liq >= $20.0)
+22:00:46 │ INFO    │ arb │ ── Top 5 closest markets ──
+22:00:46 │ INFO    │ arb │   Σ=$0.7080 │ Y=$0.1570 N=$0.5510 │ Will Harvey Weinstein be sentenced to less than 5 years
+22:00:46 │ INFO    │ arb │   Σ=$0.8990 │ Y=$0.0090 N=$0.8900 │ Will Harvey Weinstein be sentenced to more than 30 year
+22:00:46 │ INFO    │ arb │   Σ=$0.9100 │ Y=$0.1200 N=$0.7900 │ Will Harvey Weinstein be sentenced to between 10 and 20
+22:00:46 │ INFO    │ arb │   Σ=$0.9210 │ Y=$0.0110 N=$0.9100 │ Will Harvey Weinstein be sentenced to between 5 and 10 
+22:00:46 │ INFO    │ arb │   Σ=$0.9460 │ Y=$0.5930 N=$0.3530 │ Will MegaETH perform an airdrop by June 30? 
+22:00:46 │ INFO    │ arb │ 📡 Cross-checking Kalshi...
+22:00:48 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Rob Jetten become the next Prime Minister of 
+22:00:48 │ INFO    │ arb │    Poly  YES=$0.99 NO=$0.00
+22:00:48 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:00:48 │ INFO    │ arb │    Profit=$0.9860/share  Strategy=buy_kalshi_yes_poly_no  Match=66%
+22:00:48 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Geert Wilders become the next Prime Minister 
+22:00:48 │ INFO    │ arb │    Poly  YES=$0.00 NO=$1.00
+22:00:48 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:00:48 │ INFO    │ arb │    Profit=$0.9890/share  Strategy=buy_poly_yes_kalshi_no  Match=64%
+22:00:58 │ INFO    │ arb │ ─── Scan #5 ───
+22:00:58 │ INFO    │ arb │ 📡 Scanning Polymarket...
+22:00:58 │ INFO    │ arb │    Gamma API returned 200 active binary markets (sorted by volume)
+22:01:16 │ INFO    │ arb │    194 markets priced from CLOB (liq >= $20.0)
+22:01:16 │ INFO    │ arb │ ── Top 5 closest markets ──
+22:01:16 │ INFO    │ arb │   Σ=$0.6980 │ Y=$0.1470 N=$0.5510 │ Will Harvey Weinstein be sentenced to less than 5 years
+22:01:16 │ INFO    │ arb │   Σ=$0.8990 │ Y=$0.0090 N=$0.8900 │ Will Harvey Weinstein be sentenced to more than 30 year
+22:01:16 │ INFO    │ arb │   Σ=$0.9100 │ Y=$0.1200 N=$0.7900 │ Will Harvey Weinstein be sentenced to between 10 and 20
+22:01:16 │ INFO    │ arb │   Σ=$0.9210 │ Y=$0.0110 N=$0.9100 │ Will Harvey Weinstein be sentenced to between 5 and 10 
+22:01:16 │ INFO    │ arb │   Σ=$0.9460 │ Y=$0.5930 N=$0.3530 │ Will MegaETH perform an airdrop by June 30? 
+22:01:16 │ INFO    │ arb │ 📡 Cross-checking Kalshi...
+22:01:18 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Rob Jetten become the next Prime Minister of 
+22:01:18 │ INFO    │ arb │    Poly  YES=$0.99 NO=$0.00
+22:01:18 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:01:18 │ INFO    │ arb │    Profit=$0.9860/share  Strategy=buy_kalshi_yes_poly_no  Match=66%
+22:01:18 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Geert Wilders become the next Prime Minister 
+22:01:18 │ INFO    │ arb │    Poly  YES=$0.00 NO=$1.00
+22:01:18 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:01:18 │ INFO    │ arb │    Profit=$0.9890/share  Strategy=buy_poly_yes_kalshi_no  Match=64%
+22:01:28 │ INFO    │ arb │ ─── Scan #6 ───
+22:01:28 │ INFO    │ arb │ 📡 Scanning Polymarket...
+22:01:28 │ INFO    │ arb │    Gamma API returned 200 active binary markets (sorted by volume)
+22:01:46 │ INFO    │ arb │    194 markets priced from CLOB (liq >= $20.0)
+22:01:46 │ INFO    │ arb │ ── Top 5 closest markets ──
+22:01:46 │ INFO    │ arb │   Σ=$0.6980 │ Y=$0.1470 N=$0.5510 │ Will Harvey Weinstein be sentenced to less than 5 years
+22:01:46 │ INFO    │ arb │   Σ=$0.8990 │ Y=$0.0090 N=$0.8900 │ Will Harvey Weinstein be sentenced to more than 30 year
+22:01:46 │ INFO    │ arb │   Σ=$0.9100 │ Y=$0.1200 N=$0.7900 │ Will Harvey Weinstein be sentenced to between 10 and 20
+22:01:46 │ INFO    │ arb │   Σ=$0.9210 │ Y=$0.0110 N=$0.9100 │ Will Harvey Weinstein be sentenced to between 5 and 10 
+22:01:46 │ INFO    │ arb │   Σ=$0.9460 │ Y=$0.5930 N=$0.3530 │ Will MegaETH perform an airdrop by June 30? 
+22:01:46 │ INFO    │ arb │ 📡 Cross-checking Kalshi...
+22:01:48 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Rob Jetten become the next Prime Minister of 
+22:01:48 │ INFO    │ arb │    Poly  YES=$0.99 NO=$0.00
+22:01:48 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:01:48 │ INFO    │ arb │    Profit=$0.9860/share  Strategy=buy_kalshi_yes_poly_no  Match=66%
+22:01:48 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Geert Wilders become the next Prime Minister 
+22:01:48 │ INFO    │ arb │    Poly  YES=$0.00 NO=$1.00
+22:01:48 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:01:48 │ INFO    │ arb │    Profit=$0.9890/share  Strategy=buy_poly_yes_kalshi_no  Match=64%
+22:01:58 │ INFO    │ arb │ ─── Scan #7 ───
+22:01:58 │ INFO    │ arb │ 📡 Scanning Polymarket...
+22:01:58 │ INFO    │ arb │    Gamma API returned 200 active binary markets (sorted by volume)
+22:02:16 │ INFO    │ arb │    194 markets priced from CLOB (liq >= $20.0)
+22:02:16 │ INFO    │ arb │ ── Top 5 closest markets ──
+22:02:16 │ INFO    │ arb │   Σ=$0.6980 │ Y=$0.1470 N=$0.5510 │ Will Harvey Weinstein be sentenced to less than 5 years
+22:02:16 │ INFO    │ arb │   Σ=$0.8990 │ Y=$0.0090 N=$0.8900 │ Will Harvey Weinstein be sentenced to more than 30 year
+22:02:16 │ INFO    │ arb │   Σ=$0.9100 │ Y=$0.1200 N=$0.7900 │ Will Harvey Weinstein be sentenced to between 10 and 20
+22:02:16 │ INFO    │ arb │   Σ=$0.9210 │ Y=$0.0110 N=$0.9100 │ Will Harvey Weinstein be sentenced to between 5 and 10 
+22:02:16 │ INFO    │ arb │   Σ=$0.9460 │ Y=$0.5930 N=$0.3530 │ Will MegaETH perform an airdrop by June 30? 
+22:02:16 │ INFO    │ arb │ 📡 Cross-checking Kalshi...
+22:02:18 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Rob Jetten become the next Prime Minister of 
+22:02:18 │ INFO    │ arb │    Poly  YES=$0.99 NO=$0.00
+22:02:18 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:02:18 │ INFO    │ arb │    Profit=$0.9860/share  Strategy=buy_kalshi_yes_poly_no  Match=66%
+22:02:18 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Geert Wilders become the next Prime Minister 
+22:02:18 │ INFO    │ arb │    Poly  YES=$0.00 NO=$1.00
+22:02:18 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:02:18 │ INFO    │ arb │    Profit=$0.9890/share  Strategy=buy_poly_yes_kalshi_no  Match=64%
+22:02:28 │ INFO    │ arb │ ─── Scan #8 ───
+22:02:28 │ INFO    │ arb │ 📡 Scanning Polymarket...
+22:02:28 │ INFO    │ arb │    Gamma API returned 200 active binary markets (sorted by volume)
+22:02:46 │ INFO    │ arb │    194 markets priced from CLOB (liq >= $20.0)
+22:02:46 │ INFO    │ arb │ ── Top 5 closest markets ──
+22:02:46 │ INFO    │ arb │   Σ=$0.6980 │ Y=$0.1470 N=$0.5510 │ Will Harvey Weinstein be sentenced to less than 5 years
+22:02:46 │ INFO    │ arb │   Σ=$0.8990 │ Y=$0.0090 N=$0.8900 │ Will Harvey Weinstein be sentenced to more than 30 year
+22:02:46 │ INFO    │ arb │   Σ=$0.9100 │ Y=$0.1200 N=$0.7900 │ Will Harvey Weinstein be sentenced to between 10 and 20
+22:02:46 │ INFO    │ arb │   Σ=$0.9210 │ Y=$0.0110 N=$0.9100 │ Will Harvey Weinstein be sentenced to between 5 and 10 
+22:02:46 │ INFO    │ arb │   Σ=$0.9460 │ Y=$0.5930 N=$0.3530 │ Will MegaETH perform an airdrop by June 30? 
+22:02:46 │ INFO    │ arb │ 📡 Cross-checking Kalshi...
+22:02:48 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Rob Jetten become the next Prime Minister of 
+22:02:48 │ INFO    │ arb │    Poly  YES=$0.99 NO=$0.00
+22:02:48 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:02:48 │ INFO    │ arb │    Profit=$0.9860/share  Strategy=buy_kalshi_yes_poly_no  Match=66%
+22:02:48 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Geert Wilders become the next Prime Minister 
+22:02:48 │ INFO    │ arb │    Poly  YES=$0.00 NO=$1.00
+22:02:48 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:02:48 │ INFO    │ arb │    Profit=$0.9890/share  Strategy=buy_poly_yes_kalshi_no  Match=64%
+22:02:58 │ INFO    │ arb │ ─── Scan #9 ───
+22:02:58 │ INFO    │ arb │ 📡 Scanning Polymarket...
+22:02:58 │ INFO    │ arb │    Gamma API returned 200 active binary markets (sorted by volume)
+22:03:17 │ INFO    │ arb │    194 markets priced from CLOB (liq >= $20.0)
+22:03:17 │ INFO    │ arb │ ── Top 5 closest markets ──
+22:03:17 │ INFO    │ arb │   Σ=$0.6980 │ Y=$0.1470 N=$0.5510 │ Will Harvey Weinstein be sentenced to less than 5 years
+22:03:17 │ INFO    │ arb │   Σ=$0.8990 │ Y=$0.0090 N=$0.8900 │ Will Harvey Weinstein be sentenced to more than 30 year
+22:03:17 │ INFO    │ arb │   Σ=$0.9100 │ Y=$0.1200 N=$0.7900 │ Will Harvey Weinstein be sentenced to between 10 and 20
+22:03:17 │ INFO    │ arb │   Σ=$0.9210 │ Y=$0.0110 N=$0.9100 │ Will Harvey Weinstein be sentenced to between 5 and 10 
+22:03:17 │ INFO    │ arb │   Σ=$0.9460 │ Y=$0.5930 N=$0.3530 │ Will MegaETH perform an airdrop by June 30? 
+22:03:17 │ INFO    │ arb │ 📡 Cross-checking Kalshi...
+22:03:19 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Rob Jetten become the next Prime Minister of 
+22:03:19 │ INFO    │ arb │    Poly  YES=$0.99 NO=$0.00
+22:03:19 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:03:19 │ INFO    │ arb │    Profit=$0.9860/share  Strategy=buy_kalshi_yes_poly_no  Match=66%
+22:03:19 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Geert Wilders become the next Prime Minister 
+22:03:19 │ INFO    │ arb │    Poly  YES=$0.00 NO=$1.00
+22:03:19 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:03:19 │ INFO    │ arb │    Profit=$0.9890/share  Strategy=buy_poly_yes_kalshi_no  Match=64%
+22:03:29 │ INFO    │ arb │ ─── Scan #10 ───
+22:03:29 │ INFO    │ arb │ 📡 Scanning Polymarket...
+22:03:29 │ INFO    │ arb │    Gamma API returned 200 active binary markets (sorted by volume)
+22:03:47 │ INFO    │ arb │    194 markets priced from CLOB (liq >= $20.0)
+22:03:47 │ INFO    │ arb │ ── Top 5 closest markets ──
+22:03:47 │ INFO    │ arb │   Σ=$0.7080 │ Y=$0.1570 N=$0.5510 │ Will Harvey Weinstein be sentenced to less than 5 years
+22:03:47 │ INFO    │ arb │   Σ=$0.8990 │ Y=$0.0090 N=$0.8900 │ Will Harvey Weinstein be sentenced to more than 30 year
+22:03:47 │ INFO    │ arb │   Σ=$0.9100 │ Y=$0.1200 N=$0.7900 │ Will Harvey Weinstein be sentenced to between 10 and 20
+22:03:47 │ INFO    │ arb │   Σ=$0.9210 │ Y=$0.0110 N=$0.9100 │ Will Harvey Weinstein be sentenced to between 5 and 10 
+22:03:47 │ INFO    │ arb │   Σ=$0.9460 │ Y=$0.5930 N=$0.3530 │ Will MegaETH perform an airdrop by June 30? 
+22:03:47 │ INFO    │ arb │ 📡 Cross-checking Kalshi...
+22:03:49 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Rob Jetten become the next Prime Minister of 
+22:03:49 │ INFO    │ arb │    Poly  YES=$0.99 NO=$0.01
+22:03:49 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:03:49 │ INFO    │ arb │    Profit=$0.9850/share  Strategy=buy_kalshi_yes_poly_no  Match=66%
+22:03:49 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Geert Wilders become the next Prime Minister 
+22:03:49 │ INFO    │ arb │    Poly  YES=$0.00 NO=$1.00
+22:03:49 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:03:49 │ INFO    │ arb │    Profit=$0.9890/share  Strategy=buy_poly_yes_kalshi_no  Match=64%
+22:03:59 │ INFO    │ arb │ ─── Scan #11 ───
+22:03:59 │ INFO    │ arb │ 📡 Scanning Polymarket...
+22:03:59 │ INFO    │ arb │    Gamma API returned 200 active binary markets (sorted by volume)
+22:04:17 │ INFO    │ arb │    194 markets priced from CLOB (liq >= $20.0)
+22:04:17 │ INFO    │ arb │ ── Top 5 closest markets ──
+22:04:17 │ INFO    │ arb │   Σ=$0.7080 │ Y=$0.1570 N=$0.5510 │ Will Harvey Weinstein be sentenced to less than 5 years
+22:04:17 │ INFO    │ arb │   Σ=$0.8990 │ Y=$0.0090 N=$0.8900 │ Will Harvey Weinstein be sentenced to more than 30 year
+22:04:17 │ INFO    │ arb │   Σ=$0.9100 │ Y=$0.1200 N=$0.7900 │ Will Harvey Weinstein be sentenced to between 10 and 20
+22:04:17 │ INFO    │ arb │   Σ=$0.9210 │ Y=$0.0110 N=$0.9100 │ Will Harvey Weinstein be sentenced to between 5 and 10 
+22:04:17 │ INFO    │ arb │   Σ=$0.9460 │ Y=$0.5930 N=$0.3530 │ Will MegaETH perform an airdrop by June 30? 
+22:04:17 │ INFO    │ arb │ 📡 Cross-checking Kalshi...
+22:04:19 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Rob Jetten become the next Prime Minister of 
+22:04:19 │ INFO    │ arb │    Poly  YES=$0.99 NO=$0.00
+22:04:19 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:04:19 │ INFO    │ arb │    Profit=$0.9860/share  Strategy=buy_kalshi_yes_poly_no  Match=66%
+22:04:19 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Geert Wilders become the next Prime Minister 
+22:04:19 │ INFO    │ arb │    Poly  YES=$0.00 NO=$1.00
+22:04:19 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:04:19 │ INFO    │ arb │    Profit=$0.9890/share  Strategy=buy_poly_yes_kalshi_no  Match=64%
+22:04:29 │ INFO    │ arb │ ─── Scan #12 ───
+22:04:29 │ INFO    │ arb │ 📡 Scanning Polymarket...
+22:04:29 │ INFO    │ arb │    Gamma API returned 200 active binary markets (sorted by volume)
+22:04:35 │ INFO    │ arb │ 🛑 Shutting down...
+22:04:47 │ INFO    │ arb │    194 markets priced from CLOB (liq >= $20.0)
+22:04:47 │ INFO    │ arb │ ── Top 5 closest markets ──
+22:04:47 │ INFO    │ arb │   Σ=$0.6980 │ Y=$0.1470 N=$0.5510 │ Will Harvey Weinstein be sentenced to less than 5 years
+22:04:47 │ INFO    │ arb │   Σ=$0.8990 │ Y=$0.0090 N=$0.8900 │ Will Harvey Weinstein be sentenced to more than 30 year
+22:04:47 │ INFO    │ arb │   Σ=$0.9100 │ Y=$0.1200 N=$0.7900 │ Will Harvey Weinstein be sentenced to between 10 and 20
+22:04:47 │ INFO    │ arb │   Σ=$0.9210 │ Y=$0.0110 N=$0.9100 │ Will Harvey Weinstein be sentenced to between 5 and 10 
+22:04:47 │ INFO    │ arb │   Σ=$0.9460 │ Y=$0.5930 N=$0.3530 │ Will MegaETH perform an airdrop by June 30? 
+22:04:47 │ INFO    │ arb │ 📡 Cross-checking Kalshi...
+22:04:49 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Rob Jetten become the next Prime Minister of 
+22:04:49 │ INFO    │ arb │    Poly  YES=$0.99 NO=$0.00
+22:04:49 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:04:49 │ INFO    │ arb │    Profit=$0.9860/share  Strategy=buy_kalshi_yes_poly_no  Match=66%
+22:04:49 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Geert Wilders become the next Prime Minister 
+22:04:49 │ INFO    │ arb │    Poly  YES=$0.00 NO=$1.00
+22:04:49 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:04:49 │ INFO    │ arb │    Profit=$0.9890/share  Strategy=buy_poly_yes_kalshi_no  Match=64%
+22:04:59 │ INFO    │ arb │ WebSocket stream cancelled
+22:04:59 │ INFO    │ arb │ 🔌 WebSocket stream stopped
+
+============================================================
+  Polymarket Arb Bot — SIMULATION
+  Scan: 10s │ Threshold: <$0.99
+  Trade: $12.5/side │ Daily cap: $50.0
+============================================================
+
+📢 ⚠️ Near arb: Will Jesus Christ return before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Xi Jinping out before 2027? Σ=0.9900
+📢 ⚠️ Near arb: MegaETH market cap (FDV) >$2B one day after launch Σ=0.9900
+📢 ⚠️ Near arb: Will the Oklahoma City Thunder win the 2026 NBA Fi Σ=0.9900
+📢 ⚠️ Near arb: Will bitcoin hit $1m before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will the New York Knicks win the 2026 NBA Finals? Σ=0.9900
+📢 ⚠️ Near arb: Will the Denver Nuggets win the 2026 NBA Finals? Σ=0.9900
+📢 ⚠️ Near arb: Will Spain win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will France win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Argentina win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will China invades Taiwan before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will the Colorado Avalanche win the 2026 NHL Stanl Σ=0.9910
+📢 ⚠️ Near arb: Will England win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Brazil win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Trump out as President before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $200-250b in federa Σ=0.9940
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $150-200b in federa Σ=0.9900
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $100-150b in federa Σ=0.9940
+📢 ⚠️ Near arb: Will the Edmonton Oilers win the 2026 NHL Stanley  Σ=0.9900
+📢 ⚠️ Near arb: Will Poland qualify for the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Italy qualify for the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will OpenAI launch a new consumer hardware product Σ=0.9920
+📢 ⚠️ Near arb: Will Jesus Christ return before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Xi Jinping out before 2027? Σ=0.9900
+📢 ⚠️ Near arb: MegaETH market cap (FDV) >$2B one day after launch Σ=0.9900
+📢 ⚠️ Near arb: Will the Oklahoma City Thunder win the 2026 NBA Fi Σ=0.9900
+📢 ⚠️ Near arb: Will bitcoin hit $1m before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will the New York Knicks win the 2026 NBA Finals? Σ=0.9900
+📢 ⚠️ Near arb: Will the Denver Nuggets win the 2026 NBA Finals? Σ=0.9900
+📢 ⚠️ Near arb: Will Spain win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will France win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Argentina win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will the Colorado Avalanche win the 2026 NHL Stanl Σ=0.9910
+📢 ⚠️ Near arb: Will China invades Taiwan before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will England win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Brazil win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Trump out as President before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $200-250b in federa Σ=0.9940
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $150-200b in federa Σ=0.9900
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $100-150b in federa Σ=0.9940
+📢 ⚠️ Near arb: Will the Edmonton Oilers win the 2026 NHL Stanley  Σ=0.9900
+📢 ⚠️ Near arb: Will Poland qualify for the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Italy qualify for the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will the Carolina Hurricanes win the 2026 NHL Stan Σ=0.9900
+📢 ⚠️ Near arb: Will OpenAI launch a new consumer hardware product Σ=0.9920
+📢 ⚠️ Near arb: Will Jesus Christ return before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Xi Jinping out before 2027? Σ=0.9900
+📢 ⚠️ Near arb: MegaETH market cap (FDV) >$2B one day after launch Σ=0.9900
+📢 ⚠️ Near arb: Will the Oklahoma City Thunder win the 2026 NBA Fi Σ=0.9900
+📢 ⚠️ Near arb: Will bitcoin hit $1m before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will the New York Knicks win the 2026 NBA Finals? Σ=0.9900
+📢 ⚠️ Near arb: Will the Denver Nuggets win the 2026 NBA Finals? Σ=0.9900
+📢 ⚠️ Near arb: Will France win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Spain win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Argentina win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will China invades Taiwan before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will the Colorado Avalanche win the 2026 NHL Stanl Σ=0.9910
+📢 ⚠️ Near arb: Will England win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Brazil win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Trump out as President before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $200-250b in federa Σ=0.9940
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $150-200b in federa Σ=0.9900
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $100-150b in federa Σ=0.9940
+📢 ⚠️ Near arb: Will Poland qualify for the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will the Edmonton Oilers win the 2026 NHL Stanley  Σ=0.9900
+📢 ⚠️ Near arb: Will Italy qualify for the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will the Carolina Hurricanes win the 2026 NHL Stan Σ=0.9900
+📢 ⚠️ Near arb: Will OpenAI launch a new consumer hardware product Σ=0.9920
+📢 ⚠️ Near arb: Will Jesus Christ return before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Xi Jinping out before 2027? Σ=0.9900
+📢 ⚠️ Near arb: MegaETH market cap (FDV) >$2B one day after launch Σ=0.9900
+📢 ⚠️ Near arb: Will the Oklahoma City Thunder win the 2026 NBA Fi Σ=0.9900
+📢 ⚠️ Near arb: Will bitcoin hit $1m before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will the New York Knicks win the 2026 NBA Finals? Σ=0.9900
+📢 ⚠️ Near arb: Will the Denver Nuggets win the 2026 NBA Finals? Σ=0.9900
+📢 ⚠️ Near arb: Will Spain win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will France win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Argentina win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will the Colorado Avalanche win the 2026 NHL Stanl Σ=0.9910
+📢 ⚠️ Near arb: Will China invades Taiwan before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will England win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Brazil win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Trump out as President before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $200-250b in federa Σ=0.9940
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $150-200b in federa Σ=0.9900
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $100-150b in federa Σ=0.9940
+📢 ⚠️ Near arb: Will the Edmonton Oilers win the 2026 NHL Stanley  Σ=0.9900
+📢 ⚠️ Near arb: Will Poland qualify for the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Italy qualify for the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will the Carolina Hurricanes win the 2026 NHL Stan Σ=0.9900
+📢 ⚠️ Near arb: Will OpenAI launch a new consumer hardware product Σ=0.9920
+📢 ⚠️ Near arb: Will Jesus Christ return before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Xi Jinping out before 2027? Σ=0.9900
+📢 ⚠️ Near arb: MegaETH market cap (FDV) >$2B one day after launch Σ=0.9900
+📢 ⚠️ Near arb: Will the Oklahoma City Thunder win the 2026 NBA Fi Σ=0.9900
+📢 ⚠️ Near arb: Will bitcoin hit $1m before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will the New York Knicks win the 2026 NBA Finals? Σ=0.9900
+📢 ⚠️ Near arb: Will the Denver Nuggets win the 2026 NBA Finals? Σ=0.9900
+📢 ⚠️ Near arb: Will Spain win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will France win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Argentina win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will England win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will China invades Taiwan before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will the Colorado Avalanche win the 2026 NHL Stanl Σ=0.9910
+📢 ⚠️ Near arb: Will Brazil win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Trump out as President before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $200-250b in federa Σ=0.9940
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $150-200b in federa Σ=0.9900
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $100-150b in federa Σ=0.9940
+📢 ⚠️ Near arb: Will Poland qualify for the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will the Edmonton Oilers win the 2026 NHL Stanley  Σ=0.9900
+📢 ⚠️ Near arb: Will Italy qualify for the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will the Carolina Hurricanes win the 2026 NHL Stan Σ=0.9900
+📢 ⚠️ Near arb: Will OpenAI launch a new consumer hardware product Σ=0.9920
+📢 ⚠️ Near arb: Will Jesus Christ return before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Xi Jinping out before 2027? Σ=0.9900
+📢 ⚠️ Near arb: MegaETH market cap (FDV) >$2B one day after launch Σ=0.9900
+📢 ⚠️ Near arb: Will the Oklahoma City Thunder win the 2026 NBA Fi Σ=0.9900
+📢 ⚠️ Near arb: Will bitcoin hit $1m before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will the New York Knicks win the 2026 NBA Finals? Σ=0.9900
+📢 ⚠️ Near arb: Will the Denver Nuggets win the 2026 NBA Finals? Σ=0.9900
+📢 ⚠️ Near arb: Will Spain win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will France win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Argentina win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will the Colorado Avalanche win the 2026 NHL Stanl Σ=0.9910
+📢 ⚠️ Near arb: Will China invades Taiwan before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will England win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Brazil win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Trump out as President before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $200-250b in federa Σ=0.9940
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $150-200b in federa Σ=0.9900
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $100-150b in federa Σ=0.9940
+📢 ⚠️ Near arb: Will the Edmonton Oilers win the 2026 NHL Stanley  Σ=0.9900
+📢 ⚠️ Near arb: Will Poland qualify for the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Italy qualify for the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will the Carolina Hurricanes win the 2026 NHL Stan Σ=0.9900
+📢 ⚠️ Near arb: Will OpenAI launch a new consumer hardware product Σ=0.9920
+📢 ⚠️ Near arb: Will Jesus Christ return before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Xi Jinping out before 2027? Σ=0.9900
+📢 ⚠️ Near arb: MegaETH market cap (FDV) >$2B one day after launch Σ=0.9900
+📢 ⚠️ Near arb: Will the Oklahoma City Thunder win the 2026 NBA Fi Σ=0.9900
+📢 ⚠️ Near arb: Will bitcoin hit $1m before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will the New York Knicks win the 2026 NBA Finals? Σ=0.9900
+📢 ⚠️ Near arb: Will the Denver Nuggets win the 2026 NBA Finals? Σ=0.9900
+📢 ⚠️ Near arb: Will Spain win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will France win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Argentina win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will the Colorado Avalanche win the 2026 NHL Stanl Σ=0.9910
+📢 ⚠️ Near arb: Will China invades Taiwan before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will England win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Brazil win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Trump out as President before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $200-250b in federa Σ=0.9940
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $150-200b in federa Σ=0.9900
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $100-150b in federa Σ=0.9940
+📢 ⚠️ Near arb: Will the Edmonton Oilers win the 2026 NHL Stanley  Σ=0.9900
+📢 ⚠️ Near arb: Will Poland qualify for the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Italy qualify for the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will the Carolina Hurricanes win the 2026 NHL Stan Σ=0.9900
+📢 ⚠️ Near arb: Will OpenAI launch a new consumer hardware product Σ=0.9920
+📢 ⚠️ Near arb: Will Jesus Christ return before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Xi Jinping out before 2027? Σ=0.9900
+📢 ⚠️ Near arb: MegaETH market cap (FDV) >$2B one day after launch Σ=0.9900
+📢 ⚠️ Near arb: Will the Oklahoma City Thunder win the 2026 NBA Fi Σ=0.9900
+📢 ⚠️ Near arb: Will bitcoin hit $1m before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will the New York Knicks win the 2026 NBA Finals? Σ=0.9900
+📢 ⚠️ Near arb: Will the Denver Nuggets win the 2026 NBA Finals? Σ=0.9900
+📢 ⚠️ Near arb: Will France win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Spain win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Argentina win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will the Colorado Avalanche win the 2026 NHL Stanl Σ=0.9910
+📢 ⚠️ Near arb: Will China invades Taiwan before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will England win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Brazil win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Trump out as President before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $200-250b in federa Σ=0.9940
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $150-200b in federa Σ=0.9900
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $100-150b in federa Σ=0.9940
+📢 ⚠️ Near arb: Will the Edmonton Oilers win the 2026 NHL Stanley  Σ=0.9900
+📢 ⚠️ Near arb: Will Italy qualify for the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Poland qualify for the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will the Carolina Hurricanes win the 2026 NHL Stan Σ=0.9900
+📢 ⚠️ Near arb: Will OpenAI launch a new consumer hardware product Σ=0.9920
+📢 ⚠️ Near arb: Will Jesus Christ return before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Xi Jinping out before 2027? Σ=0.9900
+📢 ⚠️ Near arb: MegaETH market cap (FDV) >$2B one day after launch Σ=0.9900
+📢 ⚠️ Near arb: Will the Oklahoma City Thunder win the 2026 NBA Fi Σ=0.9900
+📢 ⚠️ Near arb: Will bitcoin hit $1m before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will the New York Knicks win the 2026 NBA Finals? Σ=0.9900
+📢 ⚠️ Near arb: Will the Denver Nuggets win the 2026 NBA Finals? Σ=0.9900
+📢 ⚠️ Near arb: Will Spain win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will France win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Argentina win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will China invades Taiwan before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will the Colorado Avalanche win the 2026 NHL Stanl Σ=0.9910
+📢 ⚠️ Near arb: Will England win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Brazil win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Trump out as President before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $200-250b in federa Σ=0.9940
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $150-200b in federa Σ=0.9900
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $100-150b in federa Σ=0.9940
+📢 ⚠️ Near arb: Will the Edmonton Oilers win the 2026 NHL Stanley  Σ=0.9900
+📢 ⚠️ Near arb: Will Poland qualify for the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Italy qualify for the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will the Carolina Hurricanes win the 2026 NHL Stan Σ=0.9900
+📢 ⚠️ Near arb: Will OpenAI launch a new consumer hardware product Σ=0.9920
+📢 ⚠️ Near arb: Will Jesus Christ return before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Xi Jinping out before 2027? Σ=0.9900
+📢 ⚠️ Near arb: MegaETH market cap (FDV) >$2B one day after launch Σ=0.9900
+📢 ⚠️ Near arb: Will the Oklahoma City Thunder win the 2026 NBA Fi Σ=0.9900
+📢 ⚠️ Near arb: Will bitcoin hit $1m before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will the New York Knicks win the 2026 NBA Finals? Σ=0.9900
+📢 ⚠️ Near arb: Will the Denver Nuggets win the 2026 NBA Finals? Σ=0.9900
+📢 ⚠️ Near arb: Will France win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Spain win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Argentina win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will China invades Taiwan before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will the Colorado Avalanche win the 2026 NHL Stanl Σ=0.9910
+📢 ⚠️ Near arb: Will England win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Brazil win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Trump out as President before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $200-250b in federa Σ=0.9940
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $150-200b in federa Σ=0.9900
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $100-150b in federa Σ=0.9940
+📢 ⚠️ Near arb: Will the Edmonton Oilers win the 2026 NHL Stanley  Σ=0.9900
+📢 ⚠️ Near arb: Will Poland qualify for the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Italy qualify for the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will the Carolina Hurricanes win the 2026 NHL Stan Σ=0.9900
+📢 ⚠️ Near arb: Will OpenAI launch a new consumer hardware product Σ=0.9920
+📢 ⚠️ Near arb: Will Jesus Christ return before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Xi Jinping out before 2027? Σ=0.9900
+📢 ⚠️ Near arb: MegaETH market cap (FDV) >$2B one day after launch Σ=0.9900
+📢 ⚠️ Near arb: Will the Oklahoma City Thunder win the 2026 NBA Fi Σ=0.9900
+📢 ⚠️ Near arb: Will bitcoin hit $1m before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will the New York Knicks win the 2026 NBA Finals? Σ=0.9900
+📢 ⚠️ Near arb: Will the Denver Nuggets win the 2026 NBA Finals? Σ=0.9900
+📢 ⚠️ Near arb: Will France win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Spain win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Argentina win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will China invades Taiwan before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will the Colorado Avalanche win the 2026 NHL Stanl Σ=0.9910
+📢 ⚠️ Near arb: Will England win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Brazil win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Trump out as President before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $200-250b in federa Σ=0.9940
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $150-200b in federa Σ=0.9900
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $100-150b in federa Σ=0.9940
+📢 ⚠️ Near arb: Will the Edmonton Oilers win the 2026 NHL Stanley  Σ=0.9900
+📢 ⚠️ Near arb: Will Poland qualify for the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Italy qualify for the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will the Carolina Hurricanes win the 2026 NHL Stan Σ=0.9900
+📢 ⚠️ Near arb: Will OpenAI launch a new consumer hardware product Σ=0.9920
+📢 ⚠️ Near arb: Will Jesus Christ return before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Xi Jinping out before 2027? Σ=0.9900
+📢 ⚠️ Near arb: MegaETH market cap (FDV) >$2B one day after launch Σ=0.9900
+📢 ⚠️ Near arb: Will the Oklahoma City Thunder win the 2026 NBA Fi Σ=0.9900
+📢 ⚠️ Near arb: Will bitcoin hit $1m before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will the New York Knicks win the 2026 NBA Finals? Σ=0.9900
+📢 ⚠️ Near arb: Will the Denver Nuggets win the 2026 NBA Finals? Σ=0.9900
+📢 ⚠️ Near arb: Will Spain win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will France win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Argentina win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will the Colorado Avalanche win the 2026 NHL Stanl Σ=0.9910
+📢 ⚠️ Near arb: Will China invades Taiwan before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will England win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Brazil win the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Trump out as President before GTA VI? Σ=0.9900
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $200-250b in federa Σ=0.9940
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $150-200b in federa Σ=0.9900
+📢 ⚠️ Near arb: Will Elon and DOGE cut between $100-150b in federa Σ=0.9940
+📢 ⚠️ Near arb: Will Poland qualify for the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will Italy qualify for the 2026 FIFA World Cup? Σ=0.9900
+📢 ⚠️ Near arb: Will the Carolina Hurricanes win the 2026 NHL Stan Σ=0.9900
+📢 ⚠️ Near arb: Will OpenAI launch a new consumer hardware product Σ=0.9920
+
+============================================================
+📊 ARBITRAGE BOT SUMMARY
+============================================================
+  Date:            2026-02-16
+  Mode:            🔵 Simulation
+  Arbs detected:   0
+  Arbs executed:   0
+  Total spent:     $0.00
+  Expected payout: $0.00
+  Expected P&L:    $0.00
+  Daily remaining: $50.00
+============================================================
+

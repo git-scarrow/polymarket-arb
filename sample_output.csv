@@ -1,0 +1,7 @@
+timestamp,market_id,question,yes_price,no_price,combined_price,spread,amount_per_side,total_cost,expected_profit,profit_pct,simulated,source
+2026-02-15T06:21:00+00:00,pm-001,Will it rain in NYC on Feb 20 2026?,0.4200,0.5300,0.9500,0.0500,15.00,30.00,1.5789,5.26%,True,polymarket
+2026-02-15T06:21:01+00:00,pm-002,Chiefs win Super Bowl LXI?,0.3500,0.6200,0.9700,0.0300,15.00,30.00,0.9278,3.09%,True,polymarket
+2026-02-15T06:21:01+00:00,pm-003,Bitcoin above $100k on March 1?,0.5500,0.4800,1.0300,0.0000,15.00,30.00,0.0000,0.00%,True,polymarket
+2026-02-15T06:21:02+00:00,pm-004,Snow in Chicago this weekend?,0.6000,0.3500,0.9500,0.0500,15.00,30.00,1.5789,5.26%,True,polymarket
+2026-02-15T06:21:02+00:00,pm-005,Lakers make NBA playoffs 2026?,0.4800,0.4800,0.9600,0.0400,15.00,30.00,1.2500,4.17%,True,polymarket
+2026-02-15T06:21:03+00:00,pm-008,Temperature above 80F in Phoenix Feb 20?,0.3000,0.6500,0.9500,0.0500,15.00,30.00,1.5789,5.26%,True,polymarket

@@ -1,0 +1,3 @@
+aiohttp>=3.9
+py-clob-client>=0.1.0    # Polymarket on-chain trading (optional for sim)
+cryptography>=41.0       # Kalshi RSA auth (optional for sim)

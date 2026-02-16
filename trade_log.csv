@@ -1,0 +1,12 @@
+timestamp,market_id,question,yes_price,no_price,combined_price,spread,amount_per_side,total_cost,expected_profit,profit_pct,simulated,source
+2026-02-15T06:24:22.737196+00:00,pm-005,Lakers make NBA playoffs 2026?,0.4800,0.4800,0.9600,0.0400,15.00,30.00,1.2500,4.17%,True,polymarket
+2026-02-15T06:24:40.094553+00:00,pm-005,Lakers make NBA playoffs 2026?,0.4800,0.4800,0.9600,0.0400,15.00,30.00,1.2500,4.17%,True,polymarket
+2026-02-15T06:33:31.088450+00:00,pm-005,Lakers make NBA playoffs 2026?,0.4800,0.4800,0.9600,0.0400,15.00,30.00,1.2500,4.17%,True,polymarket
+2026-02-16T01:32:24.725627+00:00,pm-005,Lakers make NBA playoffs 2026?,0.4800,0.4800,0.9600,0.0400,12.50,25.00,1.0417,4.17%,True,polymarket
+2026-02-16T02:18:31.167266+00:00,pm-005,Lakers make NBA playoffs 2026?,0.4800,0.4800,0.9600,0.0400,12.50,25.00,1.0417,4.17%,True,polymarket
+2026-02-16T02:35:29.979328+00:00,pm-005,Lakers make NBA playoffs 2026?,0.4800,0.4800,0.9600,0.0400,12.50,25.00,1.0417,4.17%,True,polymarket
+2026-02-16T02:55:59.176496+00:00,pm-005,Lakers make NBA playoffs 2026?,0.4800,0.4800,0.9600,0.0400,12.50,25.00,1.0417,4.17%,True,polymarket
+2026-02-16T03:02:30.524460+00:00,pm-005,Lakers make NBA playoffs 2026?,0.4800,0.4800,0.9600,0.0400,12.50,25.00,1.0249,4.10%,True,polymarket
+2026-02-16T03:02:31.670284+00:00,pm-005,Lakers make NBA playoffs 2026?,0.4800,0.4800,0.9600,0.0400,12.50,25.00,1.0278,4.11%,True,polymarket
+2026-02-16T03:02:32.822115+00:00,pm-005,Lakers make NBA playoffs 2026?,0.4800,0.4800,0.9600,0.0400,12.50,25.00,1.0247,4.10%,True,polymarket
+2026-02-16T03:02:39.095736+00:00,pm-005,Lakers make NBA playoffs 2026?,0.4800,0.4800,0.9600,0.0400,12.50,25.00,1.0304,4.12%,True,polymarket

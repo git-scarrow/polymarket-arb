@@ -1,0 +1,273 @@
+nohup: ignoring input
+22:04:49 │ INFO    │ arb │ ✅ Kalshi RSA auth configured
+22:04:49 │ INFO    │ arb │ ─── Scan #1 ───
+22:04:49 │ INFO    │ arb │ 📡 Scanning Polymarket...
+22:04:49 │ INFO    │ arb │    Gamma API returned 200 active binary markets (sorted by volume)
+22:05:08 │ INFO    │ arb │    194 markets priced from CLOB (liq >= $20.0)
+22:05:08 │ INFO    │ arb │ ── Top 5 closest markets ──
+22:05:08 │ INFO    │ arb │   Σ=$0.6980 │ Y=$0.1470 N=$0.5510 │ Will Harvey Weinstein be sentenced to less than 5 years
+22:05:08 │ INFO    │ arb │   Σ=$0.8990 │ Y=$0.0090 N=$0.8900 │ Will Harvey Weinstein be sentenced to more than 30 year
+22:05:08 │ INFO    │ arb │   Σ=$0.9100 │ Y=$0.1200 N=$0.7900 │ Will Harvey Weinstein be sentenced to between 10 and 20
+22:05:08 │ INFO    │ arb │   Σ=$0.9210 │ Y=$0.0110 N=$0.9100 │ Will Harvey Weinstein be sentenced to between 5 and 10 
+22:05:08 │ INFO    │ arb │   Σ=$0.9460 │ Y=$0.5930 N=$0.3530 │ Will MegaETH perform an airdrop by June 30? 
+22:05:08 │ INFO    │ arb │ 📡 Cross-checking Kalshi...
+22:05:09 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Rob Jetten become the next Prime Minister of 
+22:05:09 │ INFO    │ arb │    Poly  YES=$0.99 NO=$0.00
+22:05:09 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:05:09 │ INFO    │ arb │    Profit=$0.9860/share  Strategy=buy_kalshi_yes_poly_no  Match=66%
+22:05:09 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Geert Wilders become the next Prime Minister 
+22:05:09 │ INFO    │ arb │    Poly  YES=$0.00 NO=$1.00
+22:05:09 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:05:09 │ INFO    │ arb │    Profit=$0.9890/share  Strategy=buy_poly_yes_kalshi_no  Match=64%
+22:05:09 │ INFO    │ arb │ 🔌 WebSocket stream started in background
+22:05:10 │ INFO    │ arb │ 🔌 WebSocket connected — streaming 388 tokens
+22:05:19 │ INFO    │ arb │ ─── Scan #2 ───
+22:05:19 │ INFO    │ arb │ 📡 Scanning Polymarket...
+22:05:20 │ INFO    │ arb │    Gamma API returned 200 active binary markets (sorted by volume)
+22:05:38 │ INFO    │ arb │    194 markets priced from CLOB (liq >= $20.0)
+22:05:38 │ INFO    │ arb │ ── Top 5 closest markets ──
+22:05:38 │ INFO    │ arb │   Σ=$0.7080 │ Y=$0.1570 N=$0.5510 │ Will Harvey Weinstein be sentenced to less than 5 years
+22:05:38 │ INFO    │ arb │   Σ=$0.8990 │ Y=$0.0090 N=$0.8900 │ Will Harvey Weinstein be sentenced to more than 30 year
+22:05:38 │ INFO    │ arb │   Σ=$0.9100 │ Y=$0.1200 N=$0.7900 │ Will Harvey Weinstein be sentenced to between 10 and 20
+22:05:38 │ INFO    │ arb │   Σ=$0.9210 │ Y=$0.0110 N=$0.9100 │ Will Harvey Weinstein be sentenced to between 5 and 10 
+22:05:38 │ INFO    │ arb │   Σ=$0.9460 │ Y=$0.5930 N=$0.3530 │ Will MegaETH perform an airdrop by June 30? 
+22:05:38 │ INFO    │ arb │ 📡 Cross-checking Kalshi...
+22:05:40 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Rob Jetten become the next Prime Minister of 
+22:05:40 │ INFO    │ arb │    Poly  YES=$0.99 NO=$0.00
+22:05:40 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:05:40 │ INFO    │ arb │    Profit=$0.9860/share  Strategy=buy_kalshi_yes_poly_no  Match=66%
+22:05:40 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Geert Wilders become the next Prime Minister 
+22:05:40 │ INFO    │ arb │    Poly  YES=$0.00 NO=$1.00
+22:05:40 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:05:40 │ INFO    │ arb │    Profit=$0.9890/share  Strategy=buy_poly_yes_kalshi_no  Match=64%
+22:05:50 │ INFO    │ arb │ ─── Scan #3 ───
+22:05:50 │ INFO    │ arb │ 📡 Scanning Polymarket...
+22:05:50 │ INFO    │ arb │    Gamma API returned 200 active binary markets (sorted by volume)
+22:06:08 │ INFO    │ arb │    194 markets priced from CLOB (liq >= $20.0)
+22:06:08 │ INFO    │ arb │ ── Top 5 closest markets ──
+22:06:08 │ INFO    │ arb │   Σ=$0.6980 │ Y=$0.1470 N=$0.5510 │ Will Harvey Weinstein be sentenced to less than 5 years
+22:06:08 │ INFO    │ arb │   Σ=$0.8990 │ Y=$0.0090 N=$0.8900 │ Will Harvey Weinstein be sentenced to more than 30 year
+22:06:08 │ INFO    │ arb │   Σ=$0.9100 │ Y=$0.1200 N=$0.7900 │ Will Harvey Weinstein be sentenced to between 10 and 20
+22:06:08 │ INFO    │ arb │   Σ=$0.9210 │ Y=$0.0110 N=$0.9100 │ Will Harvey Weinstein be sentenced to between 5 and 10 
+22:06:08 │ INFO    │ arb │   Σ=$0.9460 │ Y=$0.5930 N=$0.3530 │ Will MegaETH perform an airdrop by June 30? 
+22:06:08 │ INFO    │ arb │ 📡 Cross-checking Kalshi...
+22:06:10 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Rob Jetten become the next Prime Minister of 
+22:06:10 │ INFO    │ arb │    Poly  YES=$0.99 NO=$0.01
+22:06:10 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:06:10 │ INFO    │ arb │    Profit=$0.9850/share  Strategy=buy_kalshi_yes_poly_no  Match=66%
+22:06:10 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Geert Wilders become the next Prime Minister 
+22:06:10 │ INFO    │ arb │    Poly  YES=$0.00 NO=$1.00
+22:06:10 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:06:10 │ INFO    │ arb │    Profit=$0.9890/share  Strategy=buy_poly_yes_kalshi_no  Match=64%
+22:06:20 │ INFO    │ arb │ ─── Scan #4 ───
+22:06:20 │ INFO    │ arb │ 📡 Scanning Polymarket...
+22:06:20 │ INFO    │ arb │    Gamma API returned 200 active binary markets (sorted by volume)
+22:06:38 │ INFO    │ arb │    194 markets priced from CLOB (liq >= $20.0)
+22:06:38 │ INFO    │ arb │ ── Top 5 closest markets ──
+22:06:38 │ INFO    │ arb │   Σ=$0.6980 │ Y=$0.1470 N=$0.5510 │ Will Harvey Weinstein be sentenced to less than 5 years
+22:06:38 │ INFO    │ arb │   Σ=$0.8990 │ Y=$0.0090 N=$0.8900 │ Will Harvey Weinstein be sentenced to more than 30 year
+22:06:38 │ INFO    │ arb │   Σ=$0.9100 │ Y=$0.1200 N=$0.7900 │ Will Harvey Weinstein be sentenced to between 10 and 20
+22:06:38 │ INFO    │ arb │   Σ=$0.9210 │ Y=$0.0110 N=$0.9100 │ Will Harvey Weinstein be sentenced to between 5 and 10 
+22:06:38 │ INFO    │ arb │   Σ=$0.9460 │ Y=$0.5930 N=$0.3530 │ Will MegaETH perform an airdrop by June 30? 
+22:06:38 │ INFO    │ arb │ 📡 Cross-checking Kalshi...
+22:06:40 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Rob Jetten become the next Prime Minister of 
+22:06:40 │ INFO    │ arb │    Poly  YES=$0.99 NO=$0.00
+22:06:40 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:06:40 │ INFO    │ arb │    Profit=$0.9860/share  Strategy=buy_kalshi_yes_poly_no  Match=66%
+22:06:40 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Geert Wilders become the next Prime Minister 
+22:06:40 │ INFO    │ arb │    Poly  YES=$0.00 NO=$1.00
+22:06:40 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:06:40 │ INFO    │ arb │    Profit=$0.9890/share  Strategy=buy_poly_yes_kalshi_no  Match=64%
+22:06:50 │ INFO    │ arb │ ─── Scan #5 ───
+22:06:50 │ INFO    │ arb │ 📡 Scanning Polymarket...
+22:06:50 │ INFO    │ arb │    Gamma API returned 200 active binary markets (sorted by volume)
+22:07:09 │ INFO    │ arb │    194 markets priced from CLOB (liq >= $20.0)
+22:07:09 │ INFO    │ arb │ ── Top 5 closest markets ──
+22:07:09 │ INFO    │ arb │   Σ=$0.6980 │ Y=$0.1470 N=$0.5510 │ Will Harvey Weinstein be sentenced to less than 5 years
+22:07:09 │ INFO    │ arb │   Σ=$0.8990 │ Y=$0.0090 N=$0.8900 │ Will Harvey Weinstein be sentenced to more than 30 year
+22:07:09 │ INFO    │ arb │   Σ=$0.9100 │ Y=$0.1200 N=$0.7900 │ Will Harvey Weinstein be sentenced to between 10 and 20
+22:07:09 │ INFO    │ arb │   Σ=$0.9210 │ Y=$0.0110 N=$0.9100 │ Will Harvey Weinstein be sentenced to between 5 and 10 
+22:07:09 │ INFO    │ arb │   Σ=$0.9460 │ Y=$0.5930 N=$0.3530 │ Will MegaETH perform an airdrop by June 30? 
+22:07:09 │ INFO    │ arb │ 📡 Cross-checking Kalshi...
+22:07:10 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Rob Jetten become the next Prime Minister of 
+22:07:10 │ INFO    │ arb │    Poly  YES=$0.99 NO=$0.01
+22:07:10 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:07:10 │ INFO    │ arb │    Profit=$0.9850/share  Strategy=buy_kalshi_yes_poly_no  Match=66%
+22:07:11 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Geert Wilders become the next Prime Minister 
+22:07:11 │ INFO    │ arb │    Poly  YES=$0.00 NO=$1.00
+22:07:11 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:07:11 │ INFO    │ arb │    Profit=$0.9890/share  Strategy=buy_poly_yes_kalshi_no  Match=64%
+22:07:21 │ INFO    │ arb │ ─── Scan #6 ───
+22:07:21 │ INFO    │ arb │ 📡 Scanning Polymarket...
+22:07:21 │ INFO    │ arb │    Gamma API returned 200 active binary markets (sorted by volume)
+22:07:39 │ INFO    │ arb │    194 markets priced from CLOB (liq >= $20.0)
+22:07:39 │ INFO    │ arb │ ── Top 5 closest markets ──
+22:07:39 │ INFO    │ arb │   Σ=$0.7080 │ Y=$0.1570 N=$0.5510 │ Will Harvey Weinstein be sentenced to less than 5 years
+22:07:39 │ INFO    │ arb │   Σ=$0.8990 │ Y=$0.0090 N=$0.8900 │ Will Harvey Weinstein be sentenced to more than 30 year
+22:07:39 │ INFO    │ arb │   Σ=$0.9100 │ Y=$0.1200 N=$0.7900 │ Will Harvey Weinstein be sentenced to between 10 and 20
+22:07:39 │ INFO    │ arb │   Σ=$0.9210 │ Y=$0.0110 N=$0.9100 │ Will Harvey Weinstein be sentenced to between 5 and 10 
+22:07:39 │ INFO    │ arb │   Σ=$0.9460 │ Y=$0.5930 N=$0.3530 │ Will MegaETH perform an airdrop by June 30? 
+22:07:39 │ INFO    │ arb │ 📡 Cross-checking Kalshi...
+22:07:41 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Rob Jetten become the next Prime Minister of 
+22:07:41 │ INFO    │ arb │    Poly  YES=$0.99 NO=$0.00
+22:07:41 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:07:41 │ INFO    │ arb │    Profit=$0.9860/share  Strategy=buy_kalshi_yes_poly_no  Match=66%
+22:07:41 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Geert Wilders become the next Prime Minister 
+22:07:41 │ INFO    │ arb │    Poly  YES=$0.00 NO=$1.00
+22:07:41 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:07:41 │ INFO    │ arb │    Profit=$0.9890/share  Strategy=buy_poly_yes_kalshi_no  Match=64%
+22:07:51 │ INFO    │ arb │ ─── Scan #7 ───
+22:07:51 │ INFO    │ arb │ 📡 Scanning Polymarket...
+22:07:51 │ INFO    │ arb │    Gamma API returned 200 active binary markets (sorted by volume)
+22:08:09 │ INFO    │ arb │    194 markets priced from CLOB (liq >= $20.0)
+22:08:09 │ INFO    │ arb │ ── Top 5 closest markets ──
+22:08:09 │ INFO    │ arb │   Σ=$0.8490 │ Y=$0.2980 N=$0.5510 │ Will Harvey Weinstein be sentenced to less than 5 years
+22:08:09 │ INFO    │ arb │   Σ=$0.8990 │ Y=$0.0090 N=$0.8900 │ Will Harvey Weinstein be sentenced to more than 30 year
+22:08:09 │ INFO    │ arb │   Σ=$0.9100 │ Y=$0.1200 N=$0.7900 │ Will Harvey Weinstein be sentenced to between 10 and 20
+22:08:09 │ INFO    │ arb │   Σ=$0.9210 │ Y=$0.0110 N=$0.9100 │ Will Harvey Weinstein be sentenced to between 5 and 10 
+22:08:09 │ INFO    │ arb │   Σ=$0.9460 │ Y=$0.5930 N=$0.3530 │ Will MegaETH perform an airdrop by June 30? 
+22:08:09 │ INFO    │ arb │ 📡 Cross-checking Kalshi...
+22:08:11 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Rob Jetten become the next Prime Minister of 
+22:08:11 │ INFO    │ arb │    Poly  YES=$0.99 NO=$0.00
+22:08:11 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:08:11 │ INFO    │ arb │    Profit=$0.9860/share  Strategy=buy_kalshi_yes_poly_no  Match=66%
+22:08:11 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Geert Wilders become the next Prime Minister 
+22:08:11 │ INFO    │ arb │    Poly  YES=$0.00 NO=$1.00
+22:08:11 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:08:11 │ INFO    │ arb │    Profit=$0.9890/share  Strategy=buy_poly_yes_kalshi_no  Match=64%
+22:08:21 │ INFO    │ arb │ ─── Scan #8 ───
+22:08:21 │ INFO    │ arb │ 📡 Scanning Polymarket...
+22:08:21 │ INFO    │ arb │    Gamma API returned 200 active binary markets (sorted by volume)
+22:08:39 │ INFO    │ arb │    194 markets priced from CLOB (liq >= $20.0)
+22:08:39 │ INFO    │ arb │ ── Top 5 closest markets ──
+22:08:39 │ INFO    │ arb │   Σ=$0.8490 │ Y=$0.2980 N=$0.5510 │ Will Harvey Weinstein be sentenced to less than 5 years
+22:08:39 │ INFO    │ arb │   Σ=$0.8990 │ Y=$0.0090 N=$0.8900 │ Will Harvey Weinstein be sentenced to more than 30 year
+22:08:39 │ INFO    │ arb │   Σ=$0.9100 │ Y=$0.1200 N=$0.7900 │ Will Harvey Weinstein be sentenced to between 10 and 20
+22:08:39 │ INFO    │ arb │   Σ=$0.9210 │ Y=$0.0110 N=$0.9100 │ Will Harvey Weinstein be sentenced to between 5 and 10 
+22:08:39 │ INFO    │ arb │   Σ=$0.9460 │ Y=$0.5930 N=$0.3530 │ Will MegaETH perform an airdrop by June 30? 
+22:08:39 │ INFO    │ arb │ 📡 Cross-checking Kalshi...
+22:08:41 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Rob Jetten become the next Prime Minister of 
+22:08:41 │ INFO    │ arb │    Poly  YES=$0.99 NO=$0.00
+22:08:41 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:08:41 │ INFO    │ arb │    Profit=$0.9860/share  Strategy=buy_kalshi_yes_poly_no  Match=66%
+22:08:41 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Geert Wilders become the next Prime Minister 
+22:08:41 │ INFO    │ arb │    Poly  YES=$0.00 NO=$1.00
+22:08:41 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:08:41 │ INFO    │ arb │    Profit=$0.9890/share  Strategy=buy_poly_yes_kalshi_no  Match=64%
+22:08:51 │ INFO    │ arb │ ─── Scan #9 ───
+22:08:51 │ INFO    │ arb │ 📡 Scanning Polymarket...
+22:08:51 │ INFO    │ arb │    Gamma API returned 200 active binary markets (sorted by volume)
+22:09:10 │ INFO    │ arb │    194 markets priced from CLOB (liq >= $20.0)
+22:09:10 │ INFO    │ arb │ ── Top 5 closest markets ──
+22:09:10 │ INFO    │ arb │   Σ=$0.8490 │ Y=$0.2980 N=$0.5510 │ Will Harvey Weinstein be sentenced to less than 5 years
+22:09:10 │ INFO    │ arb │   Σ=$0.8990 │ Y=$0.0090 N=$0.8900 │ Will Harvey Weinstein be sentenced to more than 30 year
+22:09:10 │ INFO    │ arb │   Σ=$0.9100 │ Y=$0.1200 N=$0.7900 │ Will Harvey Weinstein be sentenced to between 10 and 20
+22:09:10 │ INFO    │ arb │   Σ=$0.9210 │ Y=$0.0110 N=$0.9100 │ Will Harvey Weinstein be sentenced to between 5 and 10 
+22:09:10 │ INFO    │ arb │   Σ=$0.9460 │ Y=$0.5930 N=$0.3530 │ Will MegaETH perform an airdrop by June 30? 
+22:09:10 │ INFO    │ arb │ 📡 Cross-checking Kalshi...
+22:09:12 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Rob Jetten become the next Prime Minister of 
+22:09:12 │ INFO    │ arb │    Poly  YES=$0.99 NO=$0.01
+22:09:12 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:09:12 │ INFO    │ arb │    Profit=$0.9850/share  Strategy=buy_kalshi_yes_poly_no  Match=66%
+22:09:12 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Geert Wilders become the next Prime Minister 
+22:09:12 │ INFO    │ arb │    Poly  YES=$0.00 NO=$1.00
+22:09:12 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:09:12 │ INFO    │ arb │    Profit=$0.9890/share  Strategy=buy_poly_yes_kalshi_no  Match=64%
+22:09:22 │ INFO    │ arb │ ─── Scan #10 ───
+22:09:22 │ INFO    │ arb │ 📡 Scanning Polymarket...
+22:09:22 │ INFO    │ arb │    Gamma API returned 200 active binary markets (sorted by volume)
+22:09:40 │ INFO    │ arb │    194 markets priced from CLOB (liq >= $20.0)
+22:09:40 │ INFO    │ arb │ ── Top 5 closest markets ──
+22:09:40 │ INFO    │ arb │   Σ=$0.8490 │ Y=$0.2980 N=$0.5510 │ Will Harvey Weinstein be sentenced to less than 5 years
+22:09:40 │ INFO    │ arb │   Σ=$0.8990 │ Y=$0.0090 N=$0.8900 │ Will Harvey Weinstein be sentenced to more than 30 year
+22:09:40 │ INFO    │ arb │   Σ=$0.9100 │ Y=$0.1200 N=$0.7900 │ Will Harvey Weinstein be sentenced to between 10 and 20
+22:09:40 │ INFO    │ arb │   Σ=$0.9210 │ Y=$0.0110 N=$0.9100 │ Will Harvey Weinstein be sentenced to between 5 and 10 
+22:09:40 │ INFO    │ arb │   Σ=$0.9410 │ Y=$0.0270 N=$0.9140 │ Will Trump deport 500,000-750,000- people?
+22:09:40 │ INFO    │ arb │ 📡 Cross-checking Kalshi...
+22:09:42 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Rob Jetten become the next Prime Minister of 
+22:09:42 │ INFO    │ arb │    Poly  YES=$0.99 NO=$0.01
+22:09:42 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:09:42 │ INFO    │ arb │    Profit=$0.9850/share  Strategy=buy_kalshi_yes_poly_no  Match=66%
+22:09:42 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Geert Wilders become the next Prime Minister 
+22:09:42 │ INFO    │ arb │    Poly  YES=$0.00 NO=$1.00
+22:09:42 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:09:42 │ INFO    │ arb │    Profit=$0.9890/share  Strategy=buy_poly_yes_kalshi_no  Match=64%
+22:09:52 │ INFO    │ arb │ ─── Scan #11 ───
+22:09:52 │ INFO    │ arb │ 📡 Scanning Polymarket...
+22:09:52 │ INFO    │ arb │    Gamma API returned 200 active binary markets (sorted by volume)
+22:10:10 │ INFO    │ arb │    194 markets priced from CLOB (liq >= $20.0)
+22:10:10 │ INFO    │ arb │ ── Top 5 closest markets ──
+22:10:10 │ INFO    │ arb │   Σ=$0.8490 │ Y=$0.2980 N=$0.5510 │ Will Harvey Weinstein be sentenced to less than 5 years
+22:10:10 │ INFO    │ arb │   Σ=$0.8990 │ Y=$0.0090 N=$0.8900 │ Will Harvey Weinstein be sentenced to more than 30 year
+22:10:10 │ INFO    │ arb │   Σ=$0.9100 │ Y=$0.1200 N=$0.7900 │ Will Harvey Weinstein be sentenced to between 10 and 20
+22:10:10 │ INFO    │ arb │   Σ=$0.9210 │ Y=$0.0110 N=$0.9100 │ Will Harvey Weinstein be sentenced to between 5 and 10 
+22:10:10 │ INFO    │ arb │   Σ=$0.9410 │ Y=$0.0270 N=$0.9140 │ Will Trump deport 500,000-750,000- people?
+22:10:10 │ INFO    │ arb │ 📡 Cross-checking Kalshi...
+22:10:12 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Rob Jetten become the next Prime Minister of 
+22:10:12 │ INFO    │ arb │    Poly  YES=$0.99 NO=$0.01
+22:10:12 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:10:12 │ INFO    │ arb │    Profit=$0.9850/share  Strategy=buy_kalshi_yes_poly_no  Match=66%
+22:10:12 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Geert Wilders become the next Prime Minister 
+22:10:12 │ INFO    │ arb │    Poly  YES=$0.00 NO=$1.00
+22:10:12 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:10:12 │ INFO    │ arb │    Profit=$0.9890/share  Strategy=buy_poly_yes_kalshi_no  Match=64%
+22:10:22 │ INFO    │ arb │ ─── Scan #12 ───
+22:10:22 │ INFO    │ arb │ 📡 Scanning Polymarket...
+22:10:22 │ INFO    │ arb │    Gamma API returned 200 active binary markets (sorted by volume)
+22:10:40 │ INFO    │ arb │    194 markets priced from CLOB (liq >= $20.0)
+22:10:40 │ INFO    │ arb │ ── Top 5 closest markets ──
+22:10:40 │ INFO    │ arb │   Σ=$0.8490 │ Y=$0.2980 N=$0.5510 │ Will Harvey Weinstein be sentenced to less than 5 years
+22:10:40 │ INFO    │ arb │   Σ=$0.8990 │ Y=$0.0090 N=$0.8900 │ Will Harvey Weinstein be sentenced to more than 30 year
+22:10:40 │ INFO    │ arb │   Σ=$0.9100 │ Y=$0.1200 N=$0.7900 │ Will Harvey Weinstein be sentenced to between 10 and 20
+22:10:40 │ INFO    │ arb │   Σ=$0.9210 │ Y=$0.0110 N=$0.9100 │ Will Harvey Weinstein be sentenced to between 5 and 10 
+22:10:40 │ INFO    │ arb │   Σ=$0.9440 │ Y=$0.0270 N=$0.9170 │ Will Trump deport 500,000-750,000- people?
+22:10:40 │ INFO    │ arb │ 📡 Cross-checking Kalshi...
+22:10:42 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Rob Jetten become the next Prime Minister of 
+22:10:42 │ INFO    │ arb │    Poly  YES=$0.99 NO=$0.01
+22:10:42 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:10:42 │ INFO    │ arb │    Profit=$0.9850/share  Strategy=buy_kalshi_yes_poly_no  Match=66%
+22:10:42 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Geert Wilders become the next Prime Minister 
+22:10:42 │ INFO    │ arb │    Poly  YES=$0.00 NO=$1.00
+22:10:42 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:10:42 │ INFO    │ arb │    Profit=$0.9890/share  Strategy=buy_poly_yes_kalshi_no  Match=64%
+22:10:52 │ INFO    │ arb │ ─── Scan #13 ───
+22:10:52 │ INFO    │ arb │ 📡 Scanning Polymarket...
+22:10:53 │ INFO    │ arb │    Gamma API returned 200 active binary markets (sorted by volume)
+22:11:11 │ INFO    │ arb │    194 markets priced from CLOB (liq >= $20.0)
+22:11:11 │ INFO    │ arb │ ── Top 5 closest markets ──
+22:11:11 │ INFO    │ arb │   Σ=$0.7340 │ Y=$0.1830 N=$0.5510 │ Will Harvey Weinstein be sentenced to less than 5 years
+22:11:11 │ INFO    │ arb │   Σ=$0.8990 │ Y=$0.0090 N=$0.8900 │ Will Harvey Weinstein be sentenced to more than 30 year
+22:11:11 │ INFO    │ arb │   Σ=$0.9100 │ Y=$0.1200 N=$0.7900 │ Will Harvey Weinstein be sentenced to between 10 and 20
+22:11:11 │ INFO    │ arb │   Σ=$0.9210 │ Y=$0.0110 N=$0.9100 │ Will Harvey Weinstein be sentenced to between 5 and 10 
+22:11:11 │ INFO    │ arb │   Σ=$0.9460 │ Y=$0.5930 N=$0.3530 │ Will MegaETH perform an airdrop by June 30? 
+22:11:11 │ INFO    │ arb │ 📡 Cross-checking Kalshi...
+22:11:13 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Rob Jetten become the next Prime Minister of 
+22:11:13 │ INFO    │ arb │    Poly  YES=$0.99 NO=$0.01
+22:11:13 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:11:13 │ INFO    │ arb │    Profit=$0.9850/share  Strategy=buy_kalshi_yes_poly_no  Match=66%
+22:11:13 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Geert Wilders become the next Prime Minister 
+22:11:13 │ INFO    │ arb │    Poly  YES=$0.00 NO=$1.00
+22:11:13 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:11:13 │ INFO    │ arb │    Profit=$0.9890/share  Strategy=buy_poly_yes_kalshi_no  Match=64%
+22:11:23 │ INFO    │ arb │ ─── Scan #14 ───
+22:11:23 │ INFO    │ arb │ 📡 Scanning Polymarket...
+22:11:23 │ INFO    │ arb │    Gamma API returned 200 active binary markets (sorted by volume)
+22:11:41 │ INFO    │ arb │    194 markets priced from CLOB (liq >= $20.0)
+22:11:41 │ INFO    │ arb │ ── Top 5 closest markets ──
+22:11:41 │ INFO    │ arb │   Σ=$0.6980 │ Y=$0.1470 N=$0.5510 │ Will Harvey Weinstein be sentenced to less than 5 years
+22:11:41 │ INFO    │ arb │   Σ=$0.8990 │ Y=$0.0090 N=$0.8900 │ Will Harvey Weinstein be sentenced to more than 30 year
+22:11:41 │ INFO    │ arb │   Σ=$0.9100 │ Y=$0.1200 N=$0.7900 │ Will Harvey Weinstein be sentenced to between 10 and 20
+22:11:41 │ INFO    │ arb │   Σ=$0.9210 │ Y=$0.0110 N=$0.9100 │ Will Harvey Weinstein be sentenced to between 5 and 10 
+22:11:41 │ INFO    │ arb │   Σ=$0.9460 │ Y=$0.5930 N=$0.3530 │ Will MegaETH perform an airdrop by June 30? 
+22:11:41 │ INFO    │ arb │ 📡 Cross-checking Kalshi...
+22:11:43 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Rob Jetten become the next Prime Minister of 
+22:11:43 │ INFO    │ arb │    Poly  YES=$0.99 NO=$0.01
+22:11:43 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:11:43 │ INFO    │ arb │    Profit=$0.9850/share  Strategy=buy_kalshi_yes_poly_no  Match=66%
+22:11:43 │ INFO    │ arb │ 🌐 CROSS-ARB: Will Geert Wilders become the next Prime Minister 
+22:11:43 │ INFO    │ arb │    Poly  YES=$0.00 NO=$1.00
+22:11:43 │ INFO    │ arb │    Kalshi YES=$0.01 NO=$0.01
+22:11:43 │ INFO    │ arb │    Profit=$0.9890/share  Strategy=buy_poly_yes_kalshi_no  Match=64%
+22:11:53 │ INFO    │ arb │ ─── Scan #15 ───
+22:11:53 │ INFO    │ arb │ 📡 Scanning Polymarket...
+22:11:53 │ INFO    │ arb │    Gamma API returned 200 active binary markets (sorted by volume)
